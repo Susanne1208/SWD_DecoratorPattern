@@ -9,5 +9,7 @@ namespace Handin3
     public abstract class ToppingDecorator : Pizza
     {
         public abstract string getDescription();
+
+        public abstract double getCost();
     }
 }
