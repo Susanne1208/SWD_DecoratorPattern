@@ -16,10 +16,10 @@ namespace Handin3
             //throw new NotImplementedException();
         }
 
-        public double getCost()
+        public double Cost()
         {
             
-            Console.WriteLine("The price: " + 60.00);
+            Console.WriteLine("The price for Margherita: " + 60.00);
             return 60.00;
             //throw new NotImplementedException();
         }

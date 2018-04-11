@@ -10,6 +10,6 @@ namespace Handin3
     {
         public abstract string getDescription();
 
-        public abstract double getCost();
+        public abstract double Cost();
     }
 }

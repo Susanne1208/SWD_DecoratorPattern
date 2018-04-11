@@ -9,6 +9,6 @@ namespace Handin3
     public interface Pizza
     {
         string getDescription();
-        double getCost();
+        double Cost();
     } 
 }
