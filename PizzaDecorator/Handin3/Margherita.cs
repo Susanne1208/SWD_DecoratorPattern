@@ -12,15 +12,14 @@ namespace Handin3
     {
         public string getDescription()
         {
-            return "Pizza with tomatosause and cheese\n"; 
+            return "Pizza with tomatosause and cheese "; 
             //throw new NotImplementedException();
         }
 
         public double Cost()
         {
-            
-            Console.WriteLine("The price for Margherita: " + 60.00);
-            return 60.00;
+            //Console.WriteLine("The price for Margherita: " + 60.00);
+            return 50.00;
             //throw new NotImplementedException();
         }
     }

@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Handin3
 {
-    class Pepperoni : ToppingDecorator
+    class Kebab : ToppingDecorator
     {
         private Pizza pizza;
 
-        public Pepperoni(Pizza pizza)
+        public Kebab(Pizza pizza)
         {
             this.pizza = pizza;
         }
 
         public override string getDescription()
         {
-            string msg = "and pepperoni ";
+            string msg = "and kebab ";
             return pizza.getDescription() + msg;
         }
         public override double Cost()

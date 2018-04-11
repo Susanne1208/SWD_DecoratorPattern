@@ -42,10 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kebab.cs" />
     <Compile Include="Margherita.cs" />
     <Compile Include="Pepperoni.cs" />
     <Compile Include="Pineapple.cs" />
     <Compile Include="Pizza.cs" />
+    <Compile Include="Rucola.cs" />
     <Compile Include="ToppingDecorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

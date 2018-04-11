@@ -11,51 +11,49 @@ namespace Handin3
     {
         static void Main(string[] args)
         {
-            //Pizza myPizza = new Margherita();
-            //Console.WriteLine(myPizza.getDescription() + myPizza.Cost());
-
-            string response;
-            string responseP;
-            Pizza myPizza1 = new Margherita();
-
-            Console.WriteLine("Would you like to add something to your pizza? (y/n)");
-            response = Console.ReadLine();
-            if (response == "y")
+            Pizza myPizza = new Margherita();
+            string exit = String.Empty;
+            Console.WriteLine("A pizza Margherita costs "+myPizza.Cost() +" Kroner without toppings");
+            do
             {
-                do ()
-                Console.WriteLine("Which topping");
+                Console.WriteLine("***********************************************\n" +
+                                  "Would you like to add something to your pizza? \n" +
+                                  "1. Pepperoni     10 Kr. Ekstra\n" +
+                                  "2. Pineapple     5 Kr. Ekstra\n" +
+                                  "3. Rucola        5 Kr. Ekstra\n" +
+                                  "4. Kebab         10 Kr. Ekstra\n" +
+                                  "5. No more topping\n" +
+                                  "***********************************************\n");
 
-            }
-            else
-            {
-
-            }
-            switch (response)
-            {
-                case "y":
-                    Console.WriteLine("Pepperoni or Pineapple?");
-                    responseP = Console.ReadLine();
-                    if (responseP == "pepperoni")   
-                    {
-                        myPizza1 = new Pepperoni(myPizza1);
-                        Console.WriteLine(myPizza1.getDescription() + myPizza1.Cost());
-                    }
-
-                    if (responseP == "pineapple")
-                    {
-                        myPizza1 = new Pineapple(myPizza1);
-                        Console.WriteLine(myPizza1.getDescription()+myPizza1.Cost());
-                    }
-                    break;
-                case "n":
-                    break;
-                default:
-                    Console.WriteLine("Write 'y' or 'n' to continue");
-                    break;
-            }
-
+                string answer = Console.ReadLine();
+                switch (answer)
+                {
+                    case "1":
+                        Console.WriteLine("Adds pepperoni to your pizza");
+                        myPizza = new Pepperoni(myPizza);
+                        break;
+                    case "2":
+                        Console.WriteLine("Adds pineapple to your pizza");
+                        myPizza = new Pineapple(myPizza);
+                        break;
+                    case "3":
+                        Console.WriteLine("Adds rucola to your pizza");
+                        myPizza = new Rucola(myPizza);
+                        break;
+                    case "4":
+                        Console.WriteLine("Adds kebab to your pizza");
+                        myPizza = new Kebab(myPizza);
+                        break;
+                    case "5":
+                        Console.WriteLine(myPizza.getDescription()+ "costs " + myPizza.Cost() + " Kroner");
+                        Console.ReadKey();
+                        exit = "q";
+                        break;
+                    default:
+                        Console.WriteLine("Please enter a number between 1-6\n");
+                        break;
+                }
+            }while(exit != "q");
         }
-
-        
     }
 }
