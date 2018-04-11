@@ -8,17 +8,17 @@ namespace Handin3
 {
     class Kebab : ToppingDecorator
     {
-        private Pizza pizza;
+        private IPizza pizza;
 
-        public Kebab(Pizza pizza)
+        public Kebab(IPizza pizza)
         {
             this.pizza = pizza;
         }
 
-        public override string getDescription()
+        public override string GetDescription()
         {
             string msg = "and kebab ";
-            return pizza.getDescription() + msg;
+            return pizza.GetDescription() + msg;
         }
         public override double Cost()
         {

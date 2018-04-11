@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Handin3
 {
-    public abstract class ToppingDecorator : Pizza
+    public abstract class ToppingDecorator : IPizza
     {
-        public abstract string getDescription();
+        public abstract string GetDescription();
 
         public abstract double Cost();
     }

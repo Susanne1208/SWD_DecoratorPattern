@@ -8,17 +8,17 @@ namespace Handin3
 {
     class Rucola : ToppingDecorator
     {
-        private Pizza pizza;
+        private IPizza pizza;
 
-        public Rucola(Pizza pizza)
+        public Rucola(IPizza pizza)
         {
             this.pizza = pizza;
         }
 
-        public override string getDescription()
+        public override string GetDescription()
         {
             string msg = "and rucola ";
-            return pizza.getDescription() + msg;
+            return pizza.GetDescription() + msg;
         }
         public override double Cost()
         {

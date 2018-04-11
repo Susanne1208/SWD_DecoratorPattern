@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Handin3
 {
-    public interface Pizza
+    public interface IPizza
     {
-        string getDescription();
+        string GetDescription();
         double Cost();
     } 
 }

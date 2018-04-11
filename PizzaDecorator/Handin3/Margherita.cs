@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 namespace Handin3
 {
     // PlainPizza
-    public class Margherita : Pizza
+    public class Margherita : IPizza
     {
-        public string getDescription()
+        public string GetDescription()
         {
             return "Pizza with tomatosause and cheese "; 
         }

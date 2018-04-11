@@ -11,7 +11,7 @@ namespace Handin3
     {
         static void Main(string[] args)
         {
-            Pizza myPizza = new Margherita();
+            IPizza myPizza = new Margherita();
             Console.WriteLine("A pizza Margherita costs " + myPizza.Cost() + " Kroner without toppings");
             string exit = String.Empty;
             
@@ -46,7 +46,7 @@ namespace Handin3
                         myPizza = new Kebab(myPizza);
                         break;
                     case "5":
-                        Console.WriteLine(myPizza.getDescription()+ "costs " + myPizza.Cost() + " Kroner");
+                        Console.WriteLine(myPizza.GetDescription()+ "costs " + myPizza.Cost() + " Kroner");
                         Console.ReadKey();
                         exit = "q";
                         break;

@@ -46,7 +46,7 @@
     <Compile Include="Margherita.cs" />
     <Compile Include="Pepperoni.cs" />
     <Compile Include="Pineapple.cs" />
-    <Compile Include="Pizza.cs" />
+    <Compile Include="IPizza.cs" />
     <Compile Include="Rucola.cs" />
     <Compile Include="ToppingDecorator.cs" />
     <Compile Include="Program.cs" />
