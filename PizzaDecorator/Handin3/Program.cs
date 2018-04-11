@@ -12,8 +12,9 @@ namespace Handin3
         static void Main(string[] args)
         {
             Pizza myPizza = new Margherita();
+            Console.WriteLine("A pizza Margherita costs " + myPizza.Cost() + " Kroner without toppings");
             string exit = String.Empty;
-            Console.WriteLine("A pizza Margherita costs "+myPizza.Cost() +" Kroner without toppings");
+            
             do
             {
                 Console.WriteLine("***********************************************\n" +
