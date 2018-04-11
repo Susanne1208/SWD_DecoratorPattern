@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Margherita.cs" />
+    <Compile Include="Pepperoni.cs" />
     <Compile Include="Pineapple.cs" />
     <Compile Include="Pizza.cs" />
     <Compile Include="ToppingDecorator.cs" />

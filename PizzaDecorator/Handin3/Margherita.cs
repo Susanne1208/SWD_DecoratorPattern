@@ -12,7 +12,7 @@ namespace Handin3
     {
         public string getDescription()
         {
-            return "Pizza with tomatosause and cheese"; 
+            return "Pizza with tomatosause and cheese\n"; 
             //throw new NotImplementedException();
         }
 

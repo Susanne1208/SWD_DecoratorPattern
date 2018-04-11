@@ -14,8 +14,11 @@ namespace Handin3
             //Console.WriteLine(myPizza.getDescription() + myPizza.Cost());
 
             Pizza myPizza1 = new Margherita();
-            myPizza1=new Pineapple(myPizza1);
+            myPizza1 = new Pineapple(myPizza1);
+            myPizza1 = new Pepperoni(myPizza1);
             Console.WriteLine(myPizza1.getDescription() + myPizza1.Cost());
+           
+
         }
     }
 }
