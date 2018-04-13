@@ -12,17 +12,18 @@ namespace Handin3
         static void Main(string[] args)
         {
             IPizza myPizza = new Margherita();
-            Console.WriteLine("A pizza Margherita costs " + myPizza.Cost() + " Kroner without toppings");
+            Console.WriteLine("A pizza Margherita costs " + myPizza.Cost() + " DKK without toppings");
             string exit = String.Empty;
-            
+            //int amountOfRucola = 0;
+
             do
             {
                 Console.WriteLine("***********************************************\n" +
                                   "Would you like to add something to your pizza? \n" +
-                                  "1. Pepperoni     10 Kr. Ekstra\n" +
-                                  "2. Pineapple     5 Kr. Ekstra\n" +
-                                  "3. Rucola        5 Kr. Ekstra\n" +
-                                  "4. Kebab         10 Kr. Ekstra\n" +
+                                  "1. Pepperoni     10 DKK. Extra\n" +
+                                  "2. Pineapple     5 DKK. Extra\n" +
+                                  "3. Rucola        5 DKK. Extra\n" +
+                                  "4. Kebab         10 DKK. Extra\n" +
                                   "5. No more topping\n" +
                                   "***********************************************\n");
 
@@ -40,13 +41,14 @@ namespace Handin3
                     case "3":
                         Console.WriteLine("Adds rucola to your pizza");
                         myPizza = new Rucola(myPizza);
+                        //amountOfRucola++;
                         break;
                     case "4":
                         Console.WriteLine("Adds kebab to your pizza");
                         myPizza = new Kebab(myPizza);
                         break;
                     case "5":
-                        Console.WriteLine(myPizza.GetDescription()+ "\ncosts " + myPizza.Cost() + " Kroner");
+                        Console.WriteLine(myPizza.GetDescription()+ "\ncosts " + myPizza.Cost() + " DKK");
                         Console.ReadKey();
                         exit = "q";
                         break;

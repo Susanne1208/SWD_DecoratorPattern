@@ -12,7 +12,7 @@ namespace Handin3
     {
         public string GetDescription()
         {
-            return "Pizza with tomatosause and cheese"; 
+            return "Pizza with tomato sauce and cheese"; 
         }
 
         public double Cost()
