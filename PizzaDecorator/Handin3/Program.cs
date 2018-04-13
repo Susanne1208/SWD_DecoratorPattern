@@ -46,7 +46,7 @@ namespace Handin3
                         myPizza = new Kebab(myPizza);
                         break;
                     case "5":
-                        Console.WriteLine(myPizza.GetDescription()+ "costs " + myPizza.Cost() + " Kroner");
+                        Console.WriteLine(myPizza.GetDescription()+ "\ncosts " + myPizza.Cost() + " Kroner");
                         Console.ReadKey();
                         exit = "q";
                         break;

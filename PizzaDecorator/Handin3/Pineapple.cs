@@ -17,7 +17,7 @@ namespace Handin3
 
         public override string GetDescription()
         {
-            string msg = "Added pineapple \n";
+            string msg = ", pineapple";
             return pizza.GetDescription() + msg;
         }
         public override double Cost()
