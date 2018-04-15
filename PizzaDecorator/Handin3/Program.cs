@@ -5,8 +5,8 @@ using System.Net.Cache;
 using System.Text;
 using System.Threading.Tasks;
 
-// GROUP 12 SWD HANDIN 3 
-// ARMINA, EMMA OG SUSANNE
+// GROUP 12 SWD HANDIN 3 Decorator pattern
+// ARMINA (201607125), EMMA (201507335) OG SUSANNE (201606643)
 
 namespace Handin3
 {
