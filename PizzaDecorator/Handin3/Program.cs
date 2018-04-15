@@ -5,6 +5,9 @@ using System.Net.Cache;
 using System.Text;
 using System.Threading.Tasks;
 
+// GROUP 12 SWD HANDIN 3 
+// ARMINA, EMMA OG SUSANNE
+
 namespace Handin3
 {
     class Program
